@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Admin Dashboard </title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+ 
+</head>
+
+<body>
+     <section>
+        <!--Menú lateral (sidebard)-->
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="color-filter-outline"></ion-icon></span>
+                    <span class="titulo"> Logo</span></a>
+                </li>
+                 <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="titulo"> Dashboard</span></a>
+                </li> 
+                   <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="titulo"> Clientes</span></a>
+                </li> 
+               
+                   <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="cart-outline"></ion-icon></span>
+                    <span class="titulo"> Ventas</span></a>
+                </li> 
+                   <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="help-circle-outline"></ion-icon></span>
+                    <span class="titulo"> Ayuda</span></a>
+                </li> 
+                    <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="titulo"> Configuración</span></a>
+                </li> 
+                   <li>
+                    <a href="#"> 
+                        <span class="icono"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="titulo"> Cerrar sesión</span></a>
+                </li> 
+            </ul>
+         
+        </div>
+     <!--Fin Menú lateral-->
+     <!--Dashboard-->
+     <div class="container">
+        <!--Barra superior (TopBar)-->
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="buscar">
+                <label for="">
+                    <input type="text"  placeholder="Buscar..." name="" id="">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="perfil-usuario">
+                <img src="assets/img/profile-photo.jpg" alt="">
+            </div>
+        </div>
+        <!--Fin barra superior Topbar-->
+        <!--Cards , serán 4 que muestren indicadores principales-->
+        <div class="cards">
+            <div class="card">
+                <div class="card-info">
+                   <span class="card-numeros">12,345</span> 
+                   <span class="card-nombre">Visitas</span>
+                </div>
+                <div class="card-icono">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                   <span class="card-numeros">2,342</span> 
+                   <span class="card-nombre">Ventas</span>
+                </div>
+                <div class="card-icono">
+                    <ion-icon name="cash-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                   <span class="card-numeros">475</span> 
+                   <span class="card-nombre">Mensajes</span>
+                </div>
+                <div class="card-icono">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                   <span class="card-numeros">$1,550,000</span> 
+                   <span class="card-nombre">Ganancias</span>
+                </div>
+                <div class="card-icono">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                </div>
+            </div>
+
+            
+            </div>
+            <!-- Sección de contenido adicional -->
+            <div class="detalles">
+                <!-- Órdenes Recientes -->
+                <div class="ordenes-recientes">
+                    <div class="titulo-card">
+                        <h2>Órdenes Recientes</h2>
+                        <a href="#" class="btn">Ver todas</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Precio</td>
+                                <td>Pago</td>
+                                <td>Estado</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Laptop HP</td>
+                                <td>$1,200</td>
+                                <td>Pendiente</td>
+                                <td><span class="estado pendiente">PENDIENTE</span></td>
+                            </tr>
+                            <tr>
+                                <td>AirPods</td>
+                                <td>$89</td>
+                                <td>Pagado</td>
+                                <td><span class="estado devuelto">DEVUELTO</span></td>
+                            </tr>
+                            <tr>
+                                <td>PC Dell</td>
+                                <td>$650</td>
+                                <td>Pendiente</td>
+                                <td><span class="estado progreso">EN PROGRESO</span></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 14</td>
+                                <td>$4,500</td>
+                                <td>Pagado</td>
+                                <td><span class="estado pendiente">PENDIENTE</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$754</td>
+                                <td>Pagado</td>
+                                <td><span class="estado entregado">ENTREGADO</span></td>
+                            </tr>
+                            <tr>
+                                <td>Micrófono Blue Yeti</td>
+                                <td>$325</td>
+                                <td>Pendiente</td>
+                                <td><span class="estado progreso">EN PROGRESO</span></td>
+                            </tr>
+                            <tr>
+                                <td>Web Cam Logitech</td>
+                                <td>$567</td>
+                                <td>Pagado</td>
+                                <td><span class="estado entregado">ENTREGADO</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Nuevos Clientes -->
+                <div class="nuevos-clientes">
+                    <div class="titulo-card">
+                        <h2>Nuevos Clientes</h2>
+                    </div>
+                    <div class="lista-clientes">
+                        <div class="cliente">
+                            <div class="img-cliente">
+                                <img src="assets/img/pexels-pixabay-220453.jpg" alt="John Doe">
+                            </div>
+                            <div class="info-cliente">
+                                <h4>John Doe</h4>
+                                <span>Desarrollador</span>
+                            </div>
+                            <div class="acciones-cliente">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="cliente">
+                            <div class="img-cliente">
+                                <img src="assets/img/profile-img.jpg" alt="Olivia Anderson">
+                            </div>
+                            <div class="info-cliente">
+                                <h4>Olivia Anderson</h4>
+                                <span>Diseñadora</span>
+                            </div>
+                            <div class="acciones-cliente">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="cliente">
+                            <div class="img-cliente">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Ethan Thompson">
+                            </div>
+                            <div class="info-cliente">
+                                <h4>Ethan Thompson</h4>
+                                <span>Marketing</span>
+                            </div>
+                            <div class="acciones-cliente">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="cliente">
+                            <div class="img-cliente">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="Benjamin Mitchell">
+                            </div>
+                            <div class="info-cliente">
+                                <h4>Benjamin Mitchell</h4>
+                                <span>Consultor</span>
+                            </div>
+                            <div class="acciones-cliente">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="cliente">
+                            <div class="img-cliente">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Sophia Reynolds">
+                            </div>
+                            <div class="info-cliente">
+                                <h4>Sophia Reynolds</h4>
+                                <span>Gerente</span>
+                            </div>
+                            <div class="acciones-cliente">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
